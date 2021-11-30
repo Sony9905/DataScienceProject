@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<title>Data Science Project</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="Your name" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" href="project.css">
+		<link href='https://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css' />
+	</head>
+	<body>
+		
+				
+		<!-- Home -->
+		<div id="home" class="content">
+			<h2>Does Your Background Play A Role In Your Education?</h2>
+			<p>Hi, my name is Maninder Singh and this is my Data Science Project</p>
+			<p>This website will not only show my full analysis of NYC open data, but will also demonstrate the utilization of python's libaries, such as pandas, seaborn and matplotlib</p>
+			<p>Objective:</p>
+			<p>I wanted to research the Demographic of nyc schools and discover if there is a correlation between race/poverty levels in schools. I wanted to know if we see any trends between schools with a high number of POC students and poverty levels, and vice versa. Another issue I wanted to see was, do we see any trends between the graduation rates and racial background?  I essentially want to see if there are patterns between one’s background and their school. </p>
+			<p>This idea was important to me specifically because being of Asian descent as well as a low economic background, I went to schools that didn't offer enough programs/materials for my needs. I wanted to tackle this issue and see if there is more that meets the eye. </p>
+			<p>Along with this idea being important to me in particular, It’s important to look into this because there are definitely faults in the American school system. A handful of students will have negative things to say about their education and how it greatly impacted them later on in their lives and 
+			this research is important because it's one step into the door of trying to fix the school system. 
+			Right now, there can’t be any solutions to the problem if we don’t even know what the problem is. 
+			It could be a funding problem, racial problems etc. As stated before, the point of this research is to provide data that can either show abnormal patterns in the school, 
+			or in the best case scenario, none at all (example: all schools no matter what background/economic status, have students at equal graduation rates).</p>
+			<p>Hypothesis:</p>
+			<p>I predict that there will be signicant trends between poverty vs racial background and graduation vs racial background. The American school system has been flawed for quite some time,
+				and speaking from first hand experience, there are a lot of oppurtunies not present for minorities. 
+			</p>
+			<p>Security and Privacy Considerations:</p>
+			<p>I will not be working with PII [Personal Identifable Information]. Every data source is from NYC OPEN DATA. 
+		</div>
+		<!-- /Home -->
+		
+		<!-- Portfolio -->
+		<div id="portfolio" class="panel">
+			<div class="content">
+				<h2>Key Terms to know</h2>
+				<p>Correlation</p>
+				<ul id="works">
+					<li><a href=""><img src="https://miro.medium.com/max/1200/1*8j7U89RK1SgopIGET0mSFA.png" width="500"></a></li>
+					<li><a href=""><img src="https://media.geeksforgeeks.org/wp-content/uploads/20200602145751/1406-5.png" width="500"></a></li>
+				</ul>
+				<p class="footnote">Images are from <a href="https://towardsdatascience.com/correlation-is-not-causation-ae05d03c1f53">Towards Data Science and geeksforgeeks</a>.</p>
+				<p>One major term for anyone looking into this research is to know the meaning of correlation. Correlation is a connection between two things, NOT causation. 
+					Just because we see a pattern, does not necessarily mean those 2 things are dependent on one another. In simple terms, correlation is simply a relationship. 
+					Action A relates to Action B—but one event doesn’t necessarily cause the other event to happen. In this research, witnessed trends are just going to be correlations since there is no 
+					definite proof that one event triggers another. 
+				</p>
+				<p>
+					One another major term is Linear regression. In statistics, linear regression is a linear approach for modelling the relationship between a scalar response and one or more explanatory variables.
+					In basic terms, its a line used to show a trend as you will see in the "Data Analysis" section. 
+				</p>
+			</div>
+		</div>
+		<!-- /Portfolio -->
+		
+		<!-- About -->
+		<div id="about" class="panel">
+			<div class="content">
+				<h2>Data Analysis + Solution</h2>
+				<p>Data collected using Pandas, DataTime, Seaborn and scipy.stats</p>
+				<ul id="works">
+					<li><a href=""><img src="Figure_1.png" width="500px"></a></li>
+					<li><a href=""><img src="Figure_2.png" width="500px"></a></li>
+					<li><a href=""><img src="Figure_3.png" width="500px"></a></li>
+					<li><a href=""><img src="Figure_4.png" width="500px"></a></li>
+					<li><a href=""><img src="time1.png" width="100%"></a></li>
+					<li><a href=""><img src="time2.png" width="100%"></a></li>
+					<li><a href=""><img src="time3.png" width="100%"></a></li>
+					<li><a href=""><img src="time4.png" width="100%"></a></li>
+				</ul>
+				<p>Data Analysis:</p>
+				<p>Before going on into the data analysis, all the code to gather the following data above can be found in " Resources + Code " section. 
+				Majority of the collected data was forged by utilizing Pandas and filtering each dataframe to gather the needed columns, and using seaborn to plot them. 
+				</p>
+				<p>The first four lm plots show the distrbution of all schools divided into 4 different ethenices plotted against poverty percentage. As you can see, the best case sceanrio [No trend being seen] was not 
+					presented. There is clear correlation between ehtnicities and poverty percentages. There is already numerous evidence displaying the clear wealth gap between racial minorothies and white indivduals, however the purpose of 
+					this project was to show the disparity within schools, and as you can see, the more people of color within schools, the higher the poverty rates. 
+				</p>
+				<p>One interesting detail that was displayed that wasn't part of my hypothesis was that the graph between Asians vs % Poverty levels show almost no correlation. Though the linear
+					regression line shows a negative correlation, if you look at all the points, it seems a bit random. This led be to further look into the data I collected which pointed me into a signicant
+					that shouldn't be ignored, which is the fact that Asians is a misidentified group of minorities. Almost all minorities from different parts of Asia are just simply classified as "Asian". 
+					This is a huge issue because that means indivduals of Chinese, Indian, Korean, Japanese, Vietnamese, Indonesian, Malyasian etc. are all classified into one category. This can be very misleading 
+					because there can be signicant outliers for Asians, having one racial group have a poverty % than others or vise versa, presenting a huge problem for the Asian community.
+				</p>
+				<p>The second half of the data, shows a time series of graduation rates from 2005 to 2014 for different racial groups.
+					Thankfully, there seems to be a general increase in graduation rates in NYC for all students, regardless of background. However, there still seems to be a huge disparty 
+					between minority groups. As for Asians, I noted above that the data for Asians tend to be flawed because its a general census for the entire Asian community, so we cannot really explain
+					the trend. However for black and hispanic students, though the graph shows an increase in graduation rate throughout the years, the graduation rate is still sitting below a 70% average graduation rate, while compared to
+					white students, who are sitting at an average 75-80%. Whether it be funding, after-school programs, teaching stragdies, there is a clear racial disparity problem going on in NYC schools.
+				</p>
+				<p>Solutions I advice:</p>
+				<p>From the data collected, there is clear evidence that there is a trend, and as stated before, it is not necessaril cause and effect , but there is a relationship present between racial backgrounds and education. 
+					My solution for the NYC department of education is to first take the term "Asian" and breaking it up into multiple sub categories, because classifying everyone of Asian descent can be misleading and 
+					can result in numerous errors and downfalls for students in need. My second solution is to look into the root of problem. Since there is a clear issue at hand, the best idea is to tackle whats causing the divide between minorites/lower economic familes and
+					white/higher economic status students. Do schools with more white students have better programs or are schools with higher number of minorites not getting enough funding?
+				</p>
+			</div>
+		</div>
+		<!-- /About -->
+		
+		<!-- Contact -->
+		<div id="contact" class="panel">
+			<div class="content">
+				<h2>Resources + Code</h2>
+				<p>Resources:</p>
+				<p>https://data.cityofnewyork.us/Education/2018-2019-School-Demographic-Snapshot/45j8-f6um/data</p>
+				<p>https://data.cityofnewyork.us/Education/2018-DOE-High-School-Directory/vw9i-7mzq,</p>
+				<p>Code:</p>
+				<p>For this assignment, I use pandas to read in and filter the data sets, as well as use the datatime library to create the time series for this graph. </p>
+				<ul id="works">
+					<li><a href=""><img src="https://i.gyazo.com/8e57b28c1397f712dc92329e84ec5aff.png" width="1000px"></a></li>
+					<li><a href=""><img src="https://i.gyazo.com/93dc2678c53fc84c83582b92d36e72d6.png" width="1000px"></a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Contact -->
+		
+		<!-- Header with Navigation -->
+		<div id="header">
+			<h1>Data Science Project, by: Maninder Singh</h1>
+			<ul id="navigation">
+				<li><a id="link-home" href="#home">Project + Hypothesis</a></li>
+				<li><a id="link-portfolio" href="#portfolio">Key Terms</a></li>
+				<li><a id="link-about" href="#about">Data Analysis + Solution</a></li>
+				<li><a id="link-contact" href="#contact">Resources + Code</a></li>
+			</ul>
+			<!-- Demo Nav -->
+			<!-- <nav id="codrops-demos">
+				<a class="current-demo" href="#home">Demo 1</a>
+				<a href="index2.html#home">Demo 2</a>
+				<a href="index3.html#home">Demo 3</a>
+			</nav> -->
+		</div>
+
+	</body>
+</html>
+
