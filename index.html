@@ -86,7 +86,9 @@
 				<p>The first four lm plots show the distrbution of all schools divided into 4 different ethnicities plotted against poverty percentage of schools. As you can see, the best case sceanrio [No trend being seen] was not 
 					presented. There is clear correlation between ethnicities and poverty percentages. There is already numerous evidence displaying the clear wealth gap between racial minorities and white indivduals, however the purpose of 
 					this project was to show the disparity within schools, and as you can see, the more people of color within schools, the higher the poverty rates within the school. [Though the correlation coefficient is low for black students, there is clear evidence showing 
-					a linear trend]
+					a linear trend]. Starting with White students, there is already a very clear trend, where the more white students a school has, the school will more likely have lower levels of poverty. The correlation coefficient calculated using scipy.stats also justfies the behavior with a shocking -.7. Onto Black students,
+					thought the correlation coefficient is small, it is still a positive coefficient with a regression line showing another clear trend, opposite of white students. A huge issue arrises with Asian students which is discussed below. For hispanic students, with a higher correlation coefficient 
+					and sadly better clarity, shows another positive trend between the number of hispanic students in schools vs poverty levels. 
 				</p>
 				<p>One interesting detail that was displayed that wasn't part of my hypothesis was that the graph between Asians vs % Poverty levels show almost no correlation. Though the linear
 					regression line shows a negative correlation, if you look at all the points, it seems a bit random. This led be to further look into the data I collected which pointed me into a signicant
@@ -117,6 +119,7 @@
 				<p>Resources:</p>
 				<p>https://data.cityofnewyork.us/Education/2018-2019-School-Demographic-Snapshot/45j8-f6um/data</p>
 				<p>https://data.cityofnewyork.us/Education/2018-DOE-High-School-Directory/vw9i-7mzq,</p>
+				<p>This HTML page was a template gathered from codepenIO</p>
 				<p>Code:</p>
 				<p>For this assignment, I use pandas to read in and filter the data sets, as well as use the datatime library to create the time series for this graph. </p>
 				<ul id="works">
